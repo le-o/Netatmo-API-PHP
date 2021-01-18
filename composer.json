@@ -17,6 +17,6 @@
         "ext-curl": "*"
     },
     "autoload": {
-        "psr-4": { "leo\\Netatmo\\": "src/" }
+        "psr-4": { "leo\\Netatmo\\": "src/Netatmo" }
     }
 }

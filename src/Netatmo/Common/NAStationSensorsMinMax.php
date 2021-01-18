@@ -1,5 +1,5 @@
 <?php
-namespace Netatmo\Common;
+namespace leo\Netatmo\Common;
 
 /*
  * Defines the min and max values of the sensors.

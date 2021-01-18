@@ -1,5 +1,5 @@
 <?php
-namespace Netatmo\Common;
+namespace leo\Netatmo\Common;
 
 class NAWifiRssiThreshold
 {

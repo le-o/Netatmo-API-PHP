@@ -1,6 +1,6 @@
 <?php
 
-namespace Netatmo\Exceptions;
+namespace leo\Netatmo\Exceptions;
 
 class NACurlErrorType extends NAClientException
 {

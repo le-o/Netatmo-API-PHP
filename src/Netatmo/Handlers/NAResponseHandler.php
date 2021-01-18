@@ -1,6 +1,6 @@
 <?php
 
-namespace Netatmo\Handlers;
+namespace leo\Netatmo\Handlers;
 
 use Netatmo\Objects\NAHome;
 use Netatmo\Objects\NACamera;

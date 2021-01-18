@@ -1,6 +1,6 @@
 <?php
 
-namespace Netatmo\Objects;
+namespace leo\Netatmo\Objects;
 
 use Netatmo\Common\NACameraImageInfo;
 

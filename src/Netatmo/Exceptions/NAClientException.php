@@ -1,6 +1,6 @@
 <?php
 
-namespace Netatmo\Exceptions;
+namespace leo\Netatmo\Exceptions;
 
 define('CURL_ERROR_TYPE', 0);
 define('API_ERROR_TYPE',1);//error return from api

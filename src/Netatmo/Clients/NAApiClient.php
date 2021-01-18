@@ -1,6 +1,6 @@
 <?php
 
-namespace Netatmo\Clients;
+namespace leo\Netatmo\Clients;
 
 use Netatmo\Exceptions\NASDKException;
 use Netatmo\Exceptions\NAClientException;

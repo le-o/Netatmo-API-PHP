@@ -1,6 +1,6 @@
 <?php
 
-namespace Netatmo\Clients;
+namespace leo\Netatmo\Clients;
 
 use Netatmo\Handlers\NAResponseHandler;
 use Netatmo\Exceptions\NAClientException;

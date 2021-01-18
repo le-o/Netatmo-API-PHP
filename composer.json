@@ -1,0 +1,22 @@
+{
+    "name": "le-o/netatmo-api",
+    "description": "The PHP SDK enables you to authenticate, authorize and use the Netatmo API easily.",
+    "keywords": [
+        "netatmo",
+        "API",
+        "SDK"
+    ],
+    "homepage": "https://github.com/le-o/netatmo-api",
+    "type": "library",
+    "authors": [
+        {"name": "Netatmo Developers", "homepage": "http://www.netatmo.com/"}
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": { "leo\\Netatmo\\": "src/" }
+    }
+}

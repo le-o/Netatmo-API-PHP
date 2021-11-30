@@ -10,11 +10,11 @@
 
 require_once dirname(dirname(__FILE__)) . "/Netatmo/autoload.php";
 
-class NAObject extends Netatmo\Objects\NAObject
+class NAObject extends leo\Netatmo\Objects\NAObject
 {
 }
 
-class NAObjectWithPicture extends Netatmo\Objects\NAObjectWithPicture
+class NAObjectWithPicture extends leo\Netatmo\Objects\NAObjectWithPicture
 {
 }
 

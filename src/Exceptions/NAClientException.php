@@ -10,7 +10,7 @@
 
 require_once dirname(dirname(__FILE__)) . "/Netatmo/autoload.php";
 
-class NAClientException extends Netatmo\Exceptions\NAClientException
+class NAClientException extends leo\Netatmo\Exceptions\NAClientException
 {
 }
 

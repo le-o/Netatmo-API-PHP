@@ -10,7 +10,7 @@
 
 require_once dirname(dirname(__FILE__)) . "/Netatmo/autoload.php";
 
-class NACamera extends Netatmo\Objects\NACamera
+class NACamera extends leo\Netatmo\Objects\NACamera
 {
 }
 

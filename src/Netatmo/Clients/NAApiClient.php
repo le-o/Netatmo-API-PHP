@@ -2,14 +2,14 @@
 
 namespace leo\Netatmo\Clients;
 
-use Netatmo\Exceptions\NASDKException;
-use Netatmo\Exceptions\NAClientException;
-use Netatmo\Exceptions\NAApiErrorType;
-use Netatmo\Exceptions\NACurlErrorType;
-use Netatmo\Exceptions\NAJsonErrorType;
-use Netatmo\Exceptions\NAInternalErrorType;
-use Netatmo\Exceptions\NANotLoggedErrorType;
-use Netatmo\Common\NARestErrorCode;
+use leo\Netatmo\Exceptions\NASDKException;
+use leo\Netatmo\Exceptions\NAClientException;
+use leo\Netatmo\Exceptions\NAApiErrorType;
+use leo\Netatmo\Exceptions\NACurlErrorType;
+use leo\Netatmo\Exceptions\NAJsonErrorType;
+use leo\Netatmo\Exceptions\NAInternalErrorType;
+use leo\Netatmo\Exceptions\NANotLoggedErrorType;
+use leo\Netatmo\Common\NARestErrorCode;
 
 define('BACKEND_BASE_URI', "https://api.netatmo.com/");
 define('BACKEND_SERVICES_URI', "https://api.netatmo.com/api");

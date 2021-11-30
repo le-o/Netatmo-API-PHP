@@ -10,7 +10,7 @@
 
 require_once dirname(dirname(__FILE__)) . "/Netatmo/autoload.php";
 
-class NAResponseHandler extends Netatmo\Handlers\NAResponseHandler
+class NAResponseHandler extends leo\Netatmo\Handlers\NAResponseHandler
 {
 }
 

@@ -2,7 +2,7 @@
 
 namespace leo\Netatmo\Objects;
 
-use Netatmo\Common\NACameraPersonInfo;
+use leo\Netatmo\Common\NACameraPersonInfo;
 
 /**
 * class NAPerson

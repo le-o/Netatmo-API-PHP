@@ -2,12 +2,12 @@
 
 namespace leo\Netatmo\Handlers;
 
-use Netatmo\Objects\NAHome;
-use Netatmo\Objects\NACamera;
-use Netatmo\Objects\NAPerson;
-use Netatmo\Objects\NAEvent;
-use Netatmo\Exceptions\NASDKExceptions;
-use Netatmo\Common\NASDKErrorCode;
+use leo\Netatmo\Objects\NAHome;
+use leo\Netatmo\Objects\NACamera;
+use leo\Netatmo\Objects\NAPerson;
+use leo\Netatmo\Objects\NAEvent;
+use leo\Netatmo\Exceptions\NASDKExceptions;
+use leo\Netatmo\Common\NASDKErrorCode;
 
 
 /**

@@ -2,7 +2,7 @@
 
 namespace leo\Netatmo\Objects;
 
-use Netatmo\Common\NACameraImageInfo;
+use leo\Netatmo\Common\NACameraImageInfo;
 
 abstract class NAObjectWithPicture extends NAObject
 {

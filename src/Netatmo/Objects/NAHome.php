@@ -2,9 +2,9 @@
 
 namespace leo\Netatmo\Objects;
 
-use Netatmo\Common\NACameraHomeInfo;
-use Netatmo\Exceptions\NASDKException;
-use Netatmo\Common\NASDKErrorCode;
+use leo\Netatmo\Common\NACameraHomeInfo;
+use leo\Netatmo\Exceptions\NASDKException;
+use leo\Netatmo\Common\NASDKErrorCode;
 
 /**
 * Class NAHome

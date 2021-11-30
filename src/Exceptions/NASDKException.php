@@ -10,7 +10,7 @@
 
 require_once dirname(dirname(__FILE__)) . "/Netatmo/autoload.php";
 
-class NASDKException extends Netatmo\Exceptions\NASDKException
+class NASDKException extends leo\Netatmo\Exceptions\NASDKException
 {
 }
 

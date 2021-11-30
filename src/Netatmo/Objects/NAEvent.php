@@ -2,10 +2,10 @@
 
 namespace leo\Netatmo\Objects;
 
-use Netatmo\Exceptions\NASDKException;
-use Netatmo\Common\NACameraEventType;
-use Netatmo\Common\NACameraEventInfo;
-use Netatmo\Common\NASDKErrorCode;
+use leo\Netatmo\Exceptions\NASDKException;
+use leo\Netatmo\Common\NACameraEventType;
+use leo\Netatmo\Common\NACameraEventInfo;
+use leo\Netatmo\Common\NASDKErrorCode;
 
 /**
 * Class NAEvent

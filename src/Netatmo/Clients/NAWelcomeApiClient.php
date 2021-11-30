@@ -2,9 +2,9 @@
 
 namespace leo\Netatmo\Clients;
 
-use Netatmo\Handlers\NAResponseHandler;
-use Netatmo\Exceptions\NAClientException;
-use Netatmo\Common\NARestErrorCode;
+use leo\Netatmo\Handlers\NAResponseHandler;
+use leo\Netatmo\Exceptions\NAClientException;
+use leo\Netatmo\Common\NARestErrorCode;
 
 /**
  * NETATMO Welcome API PHP CLIENT

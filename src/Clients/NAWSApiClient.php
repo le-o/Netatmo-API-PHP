@@ -10,7 +10,7 @@
 
 require_once dirname(dirname(__FILE__)) . "/Netatmo/autoload.php";
 
-class NAWSApiClient extends Netatmo\Clients\NAWSApiClient
+class NAWSApiClient extends leo\Netatmo\Clients\NAWSApiClient
 {
 }
 

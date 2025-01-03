@@ -237,7 +237,7 @@ class NAApiClient
             switch ($method)
             {
                 case 'GET':
-                    $path .= '?' . http_build_query($params, NULL, '&');
+                    $path .= '?' . http_build_query($params);
                 break;
                 // Method override as we always do a POST.
                 default:
@@ -247,7 +247,7 @@ class NAApiClient
                     }
                     else
                     {
-                        $opts[CURLOPT_POSTFIELDS] = http_build_query($params, NULL, '&');
+                        $opts[CURLOPT_POSTFIELDS] = http_build_query($params);
                     }
                 break;
             }

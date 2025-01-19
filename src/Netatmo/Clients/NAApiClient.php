@@ -167,6 +167,10 @@ class NAApiClient
             $this->setVariable("code", $_GET["code"]);
         }
 
+        if ($this->getVariable("access_token_uri") == null) {
+            $this->setVariable("access_token_uri", $this->_apiurl . 'oauth2/token');
+        }
+
         if (!$this->connect()) {
             $this->error = "No refreshtoken file.";
             return false;

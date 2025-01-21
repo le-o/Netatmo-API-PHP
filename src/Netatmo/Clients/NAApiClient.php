@@ -82,6 +82,8 @@ class NAApiClient
             }
         } else if ($cb && is_callable($cb)) {
             call_user_func_array($cb, array(array("access_token" => $this->access_token, "refresh_token" => $this->refresh_token)));
+        } else {
+            file_put_contents($this->token_file_path, $this->refresh_token);
         }
     }
 

@@ -2,7 +2,6 @@
 
 namespace leo\Netatmo\Clients;
 
-use leo\Netatmo\Exceptions\NASDKException;
 use leo\Netatmo\Exceptions\NAClientException;
 use leo\Netatmo\Exceptions\NAApiErrorType;
 use leo\Netatmo\Exceptions\NACurlErrorType;
@@ -27,7 +26,7 @@ class NAApiClient
     protected $expires_at;
     protected $token_file_name = '/refreshtoken.txt';
     private $token_file_path;
-    private $_apiurl = 'https://api.netatmo.net/';
+    private $_apiurl = 'https://api.netatmo.com';
     public $error;
 
     /**
@@ -314,16 +313,16 @@ class NAApiClient
         list($headers, $body) = explode("\r\n\r\n", $result);
         $headers = explode("\r\n", $headers);
         //Only 2XX response are considered as a success
-        if (strpos($headers[0], 'HTTP/1.1 2') !== false) {
+        if (strpos($headers[0], 'HTTP/2') !== false) {
             $decode = json_decode($body, TRUE);
             if (!$decode) {
-                if (preg_match('/^HTTP\/1.1 ([0-9]{3,3}) (.*)$/', $headers[0], $matches)) {
+                if (preg_match('/^HTTP\/2 ([0-9]{3,3}) (.*)$/', $headers[0], $matches)) {
                     throw new NAJsonErrorType($matches[1], $matches[2]);
                 } else throw new NAJsonErrorType(200, "OK");
             }
             return $decode;
         } else {
-            if (!preg_match('/^HTTP\/1.1 ([0-9]{3,3}) (.*)$/', $headers[0], $matches)) {
+            if (!preg_match('/^HTTP\/2 ([0-9]{3,3}) (.*)$/', $headers[0], $matches)) {
                 $matches = array("", 400, "bad request");
             }
             $decode = json_decode($body, TRUE);

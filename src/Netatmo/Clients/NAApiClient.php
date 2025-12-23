@@ -169,7 +169,7 @@ class NAApiClient
         }
 
         if ($this->getVariable("access_token_uri") == null) {
-            $this->setVariable("access_token_uri", $this->_apiurl . 'oauth2/token');
+            $this->setVariable("access_token_uri", $this->_apiurl . '/oauth2/token');
         }
 
         if (!$this->connect()) {

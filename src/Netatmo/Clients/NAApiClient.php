@@ -188,7 +188,7 @@ class NAApiClient
                 'grant_type' => 'refresh_token',
                 'client_id' => $this->getVariable('client_id'),
                 'client_secret' => $this->getVariable('client_secret'),
-                'refresh_token' => $this->refresh_token
+                'refresh_token' => rtrim($this->refresh_token)
             )
         );
         $opts = array('http' =>
@@ -542,6 +542,9 @@ class NAApiClient
     {
         try {
             $res = $this->getAccessToken();
+            if (empty($this->access_token)) {
+                throw new \Exception("The connection with Netatmo is not possible at this time.", 109);
+            }
         } catch (NAApiErrorType $ex) {
             throw new NANotLoggedErrorType($ex->getCode(), $ex->getMessage());
         }

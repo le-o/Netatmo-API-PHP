@@ -17,7 +17,7 @@ It also introduced an autoloader respecting the PSR-4 standards, so you only nee
 ## Install and Configure
 
 To install the sdk, extract the downloaded files to your project directory. Then, just include the src/Netatmo/autoload.php file and instantiate a new NAWSApiClient (or NAThermApiClient, or NAWelcomeApiClient) object with your application client_id and client_secret:
-
+You need to configure the php value `allow_url_fopen=1` (for infomaniak, by adding a .user.ini file in root folder)
 
 
     $config = array();
